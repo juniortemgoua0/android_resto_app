@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/my_dynamic_layout">
+
+
+    <TextView
+        android:id="@+id/txt_sender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/my_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edit_sender"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <Button
+            android:id="@+id/btn_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="envoyer"
+            android:background="@color/teal_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edit_sender" />
+
+
+    </LinearLayout>
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/second_activity"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Aller a la seconde activite"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="@color/teal_200"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:onClick="showSecondActivity"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/third_activity"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Aller a la troisieme activite"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:background="@color/teal_200"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:onClick="showThirdActivity"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/show_result"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:textSize="25sp"-->
+<!--        />-->
+
+
+
+
+<!--    <ListView-->
+<!--        android:id="@+id/first_list_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/add_btn"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        android:background="@color/purple_500"-->
+<!--        android:onClick="increment"-->
+<!--        android:padding="20dp"-->
+<!--        android:text="@string/btn_add"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintCircleRadius="50dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cardView"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+<!--    <android.support.v7.widget.CardView-->
+<!--        android:id="@+id/cardView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="55dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_marginBottom="60dp"-->
+<!--        app:cardElevation="10dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.567"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.205">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/value"-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_height="600dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/value"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--            android:textSize="90sp" />-->
+
+<!--    </android.support.v7.widget.CardView>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:onClick="decrement"-->
+<!--        android:padding="20dp"-->
+<!--        android:text="@string/btn_remove"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintCircleRadius="50dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/nom"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Entrer votre nom"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        />-->
+<!--    <EditText-->
+<!--        android:id="@+id/prenom"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Entrer votre Prenom"-->
+<!--        android:layout_marginTop="@dimen/regular_padding"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/send_btn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="@dimen/regular_padding"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginLeft="100dp"-->
+<!--        android:layout_marginRight="100dp"-->
+<!--        android:text="Envoyer"-->
+<!--        android:onClick="sendValues"-->
+<!--        android:background="@color/teal_200"/>-->
+
+
+</android.support.constraint.ConstraintLayout>
